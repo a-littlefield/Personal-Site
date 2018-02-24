@@ -89,20 +89,16 @@ section::after {
 	height: 100%;
 }
 
-#sectionTwo {
-}
-
 /*End of section transition css*/
+
 .nameContainer {
 	display: flex;
 }
 
 #title {
-	/*grid-column-start: 2;
-  grid-column-end: five;*/
   justify-content: center;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 5rem;
 	margin-top: 6rem;
 	color: white;
 }
@@ -111,11 +107,9 @@ section::after {
 	display: flex;
 }
 #shortIntro {
-	/*grid-column-start: 2;
-  grid-column-end: five;*/
   justify-content: center;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 2rem;
 	margin-top: 1rem;
 	color: white;
 }
@@ -132,39 +126,29 @@ section::after {
 	justify-content: center;
 }
 
-.leavePage a {
-	/*position: relative;*/
-  /*left: 50%;*/
-  bottom: initial;
-	transform: initial;
-	left: initial;
-}
-
 .skillContainer {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 5rem;
+	margin: 5rem 0 0 5rem;
 }
 
-.skillContainer li {
-	/*padding-bottom: 0.5rem;*/
+.skillContainer h3 {
+	margin-left: 3rem;
+
 }
 
 .expContainer  {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 5rem;
+	margin: 5rem 0 0 0rem;
+}
+
+.sectionTwoTitles {
+	opacity: 0.5;
+	font-size: 5rem;
+	margin-bottom: 2rem;
 }
 
 .projectsTitle {
 	display: flex;
 	justify-content: center;
 	margin-top: 5rem;
-}
-
-.wantMoreTitle {
-	display: flex; 
-	justify-content: center;
 }
 
 .aboutMeTitle {
@@ -200,10 +184,14 @@ section::after {
 	z-index: 1;
 }
 
+.fixNav {
+	position: fixed;
+}
+
 .resumeDownload {
 	display: flex;
 	justify-content: center;
-	margin: 3rem 0;
+	margin: 6rem 0 3rem 0;
 }
 
 .aboutMe, .imageDesc {
@@ -226,12 +214,44 @@ section::after {
 
 .carousel-inner img {
 	width: 100%;
-	height: 43rem;
+	height: 500px;
 }
 
-.carousel-caption h3, p{
+#myCarousel {
+	width: 75%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	  background-image: none!important;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
 }
 
 .carousel-caption {
-	background: black;
+	background: rgba(0, 0, 0, 0.65);
+}
+
+#sectionThree ol {
+	list-style-position: inside;
+}
+
+#sectionFour {
+	background: grey;
+}
+
+#sectionFour a {
+	color: white;
 }
