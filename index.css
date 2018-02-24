@@ -1,0 +1,237 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+section {
+	
+}
+section::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 80%;
+}
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  transform: translate(0, -50%);
+  color: #fff;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+#sectionOne a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#sectionOne a span {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+#sectionOne a span::before {
+  position: absolute;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#sectionOne {
+	background: radial-gradient(grey, black);
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#sectionTwo {
+}
+
+/*End of section transition css*/
+.nameContainer {
+	display: flex;
+}
+
+#title {
+	/*grid-column-start: 2;
+  grid-column-end: five;*/
+  justify-content: center;
+  font-weight: bold;
+  font-size: 4rem;
+	margin-top: 6rem;
+	color: white;
+}
+
+.introContainer {
+	display: flex;
+}
+#shortIntro {
+	/*grid-column-start: 2;
+  grid-column-end: five;*/
+  justify-content: center;
+  font-weight: bold;
+  font-size: 4rem;
+	margin-top: 1rem;
+	color: white;
+}
+
+.profileContainer img {
+	width: 50%;
+	height: 50%;
+	margin-top: 2rem;
+	float: left;
+}
+
+.leavePage {
+	display: flex;
+	justify-content: center;
+}
+
+.leavePage a {
+	/*position: relative;*/
+  /*left: 50%;*/
+  bottom: initial;
+	transform: initial;
+	left: initial;
+}
+
+.skillContainer {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5rem;
+}
+
+.skillContainer li {
+	/*padding-bottom: 0.5rem;*/
+}
+
+.expContainer  {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5rem;
+}
+
+.projectsTitle {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+}
+
+.wantMoreTitle {
+	display: flex; 
+	justify-content: center;
+}
+
+.aboutMeTitle {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+}
+
+.aboutMeIntro {
+	margin: 0 12rem;
+}
+
+.resumeRows {
+	margin-bottom: 3rem;
+}
+
+.resumeBlockTitle {
+	margin-bottom: 1rem;
+}
+
+#navbarNav {
+	justify-content: flex-end;
+}
+
+.nav-item {
+	padding-right: 4rem;
+}
+
+#menu {
+	position: fixed;
+	width: 100%;
+	display: none;
+	z-index: 1;
+}
+
+.resumeDownload {
+	display: flex;
+	justify-content: center;
+	margin: 3rem 0;
+}
+
+.aboutMe, .imageDesc {
+	margin: 2rem 20rem 0rem 20rem;
+	justify-content: center;
+}
+
+.aboutMeImages {
+	margin-top: 4rem;
+	width: 100%;
+	height: 40rem;
+}
+
+.imageDesc {
+	padding: 1rem;
+	background: black;
+	border-radius: 1rem;
+	color: white;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 43rem;
+}
+
+.carousel-caption h3, p{
+}
+
+.carousel-caption {
+	background: black;
+}
