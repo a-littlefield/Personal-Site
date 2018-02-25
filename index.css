@@ -127,16 +127,16 @@ section::after {
 }
 
 .skillContainer {
-	margin: 5rem 0 0 5rem;
+	margin: 3rem 0 0 1rem;
 }
 
 .skillContainer h3 {
-	margin-left: 3rem;
+	margin-left: 0rem;
 
 }
 
 .expContainer  {
-	margin: 5rem 0 0 0rem;
+	margin: 3rem 0 0 0;
 }
 
 .sectionTwoTitles {
@@ -145,13 +145,29 @@ section::after {
 	margin-bottom: 2rem;
 }
 
+.expContainer p {
+	color: grey;
+}
+
 .projectsTitle {
 	display: flex;
-	justify-content: center;
-	margin-top: 5rem;
+	justify-content: flex-start;
+	margin-top: 3rem;
+}
+
+.resumeTitle {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 3rem;
 }
 
 .aboutMeTitle {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 3rem;
+}
+
+.aboutMePageTitle {
 	display: flex;
 	justify-content: center;
 	margin-top: 5rem;
@@ -202,7 +218,7 @@ section::after {
 .aboutMeImages {
 	margin-top: 4rem;
 	width: 100%;
-	height: 40rem;
+	height: 720px;
 }
 
 .imageDesc {
@@ -248,10 +264,21 @@ section::after {
 	list-style-position: inside;
 }
 
-#sectionFour {
-	background: grey;
+#sectionFive {
+	background: rgba(133, 142, 149, 0.3);
 }
 
-#sectionFour a {
-	color: white;
+#sectionThree {
+	background-color: rgba(133, 142, 149, 0.3);
+}
+
+.icons {
+	width: 40px;
+	height: auto;
+}
+
+.iconNames {
+	display: block;
+	font-size: .6rem;
+	color: black;
 }
