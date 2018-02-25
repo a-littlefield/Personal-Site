@@ -233,7 +233,7 @@ section::after {
 
 .imageDesc {
 	padding: 1rem;
-	background: black;
+	background: grey;
 	border-radius: 1rem;
 	color: white;
 }
