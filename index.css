@@ -93,6 +93,7 @@ section::after {
 
 .nameContainer {
 	display: flex;
+	margin-left: 40%;
 }
 
 #title {
@@ -105,6 +106,7 @@ section::after {
 
 .introContainer {
 	display: flex;
+	margin-left: 40%;
 }
 #shortIntro {
   justify-content: center;
@@ -114,11 +116,18 @@ section::after {
 	color: white;
 }
 
+.profileContainer {
+	position: absolute;
+	bottom: 0;
+	left: 4rem;
+}
+
 .profileContainer img {
-	width: 50%;
-	height: 50%;
+	width: 500px;
+	height: 500px;
 	margin-top: 2rem;
 	float: left;
+	bottom: 0;
 }
 
 .leavePage {
